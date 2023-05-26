@@ -1,7 +1,13 @@
 # CRTPi-HDMI2YPbPr
- CRTPi-Project HDMI to YPbPr Fork
 
-## Instructions
+ ## CRTPi-Project HDMI to YPbPr Fork
+
+ ### Introduction
+ I've updated the CRTPi instalation to be compatible with the last Retropie version to date. Aditionally this fork has been made to use a generic HDMI 2 YPbPr o Component so we, people from North and South America, can play in full RGB with our SCART-less TVs.
+
+ I took inspiration from the work of [@cjuniorfox](https://github.com/cjuniorfox) who made a script with the same porpuse before.
+
+### Instructions
 
 * Install Retropie 4.8.
 * Connect to WiFi or Ethernet with internet access.
