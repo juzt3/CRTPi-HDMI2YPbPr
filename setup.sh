@@ -8,5 +8,5 @@ sudo wget https://github.com/crtpi/CRTPi-RGB/raw/master/CRTPi-HDMI2YPbPr.zip
 sudo unzip -o -q CRTPi-HDMI2YPbPr.zip
 sudo rm CRTPi-RGB.zip
 sudo chmod a+rw -R /opt/retropie/configs/
-sudo chmod a+rwx /opt/retropie/configs/all/*.sh
+sudo chmod a+x -R /opt/retropie/configs/all/*.sh
 sudo reboot
