@@ -244,7 +244,6 @@ if [[ "$emul_lr" == "lr" ]]; then
 # change timings for 320x240 systems to 1920x240p
 	elif 
 		[[ "$system" == "psx" ]] || 
-		[[ "$system" == "dreamcast" ]] || 
 		[[ "$system" == "saturn" ]] || 
 		[[ "$system" == "atari7800" ]] || 
 		[[ "$system" == "n64" ]] || 
@@ -252,6 +251,15 @@ if [[ "$emul_lr" == "lr" ]]; then
 		[[ "$system" == "mame-libretro" ]] || 
 		[[ "$system" == "cavestory" ]] ; then 
 			vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #CRTPi 1920x240p Timing Adjusted
+			tvservice -e "DMT 6" > /dev/null;
+			tvservice -e "DMT 87" > /dev/null;
+			sleep 0.1
+			fbset -depth 8 && fbset -depth 16 && fbset -depth 24 -xres 1920 -yres 240 > /dev/null #24b depth
+
+# change timmings for 640x480p systens to 1600x240p
+	elif
+		[[ "$system" == "dreamcas"]] ; then
+			vcgencmd hdmi_timings 1600 1 73 157 204 240 1 4 3 15 0 0 0 60 0 32000000 1 > /dev/null #CRTPi 1600x240p Timing Adjusted
 			tvservice -e "DMT 6" > /dev/null;
 			tvservice -e "DMT 87" > /dev/null;
 			sleep 0.1
