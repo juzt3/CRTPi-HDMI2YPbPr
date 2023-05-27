@@ -257,8 +257,8 @@ if [[ "$emul_lr" == "lr" ]]; then
 			fbset -depth 8 && fbset -depth 16 && fbset -depth 24 -xres 1920 -yres 240 > /dev/null #24b depth
 
 # change timmings for 640x480p systens to 1600x240p
-	elif
-		[[ "$system" == "dreamcast"]] ; then
+	elif 
+		[[ "$system" == "dreamcast" ]] ; then
 			vcgencmd hdmi_timings 1600 1 73 157 204 240 1 4 3 15 0 0 0 60 0 32000000 1 > /dev/null #CRTPi 1600x240p Timing Adjusted
 			tvservice -e "DMT 6" > /dev/null;
 			tvservice -e "DMT 87" > /dev/null;
