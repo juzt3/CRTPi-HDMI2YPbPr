@@ -9,4 +9,5 @@ sudo unzip -o -q CRTPi-HDMI2YPbPr.zip
 sudo rm CRTPi-HDMI2YPbPr.zip
 sudo chmod a+rw -R /opt/retropie/configs/
 sudo chmod a+x -R /opt/retropie/configs/all/*.sh
+sudo chmod a+x /usr/bin/chvideo.py && sudo a+x /usr/bin/consoledisp.py
 sudo reboot
