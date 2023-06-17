@@ -290,8 +290,8 @@ elif
 	fbset -depth 8 && fbset -depth 16 && fbset -depth 24 -xres 320 -yres 200 > /dev/null #24b depth
 	
 else
-# for all other non-libretro emulators switch to 320x240p
-	vcgencmd hdmi_timings 320 1 15 30 42 240 1 4 3 15 1 0 0 60 0 6400000 1 > /dev/null #CRTPi 320x240p Timing Adjusted
+# for all other non-libretro emulators switch to 640x480i
+	vcgencmd hdmi_timings  1280 1 101 127 209 480 1 5 4 14 0 0 2 60 1 27042750 1 > /dev/null
 	tvservice -e "DMT 6" > /dev/null;
 	tvservice -e "DMT 87" > /dev/null;
 	sleep 0.1
