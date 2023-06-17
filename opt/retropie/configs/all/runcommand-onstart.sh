@@ -259,7 +259,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 # change timmings for 640x480p systens to 640x480i
 	elif 
 		[[ "$system" == "dreamcast" ]] ; then
-			vcgencmd hdmi_timings 1280 1 101 127 209 480 1 5 4 14 0 0 2 60.0 1 27042750 1 > /dev/null #CRTPi 640x480i Timing Adjusted
+			vcgencmd hdmi_timings 1280 1 101 127 209 480 1 5 4 14 0 0 2 60 1 27042750 1 > /dev/null #CRTPi 640x480i Timing Adjusted
 			tvservice -e "DMT 6" > /dev/null;
 			tvservice -e "DMT 87" > /dev/null;
 			sleep 0.1

@@ -1,8 +1,8 @@
 #!/bin/sh
 cd $HOME
 sudo apt-get update -y && sudo apt-get install git dialog -y
-git clone https://github.com/juzt3/es-theme-raspixel-320-240-mod
-sudo mv ./es-theme-raspixel-320-240-mod /etc/emulationstation/themes/es-theme-raspixel-320-240-mod
+git clone https://github.com/juzt3/RGB-Pi-Classic-Purle-V2-Clone
+sudo mv ./RGB-Pi-Classic-Purle-V2-Clone /etc/emulationstation/themes/RGB-Pi-Classic-Purle-V2-Clone
 cd /
 sudo wget https://github.com/juzt3/CRTPi-HDMI2YPbPr/raw/main/CRTPi-HDMI2YPbPr.zip
 sudo unzip -o -q CRTPi-HDMI2YPbPr.zip
