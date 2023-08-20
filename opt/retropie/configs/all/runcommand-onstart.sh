@@ -168,7 +168,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 		[[ "$system" == "nes" ]] || 
 		[[ "$system" == "romhacks" ]] ; then
 			# vcgencmd hdmi_timings 2048 1 160 202 320 224 1 11 5 22 0 0 0 60 0 42954545 1 > /dev/null #CRTPi 2048x224p Timing Adjusted
-			vcgencmd hdmi_timings 2048 1 59 183 186 224 1 13 3 22 0 0 0 60 0 38929335 1 > /dev/null
+			vcgencmd hdmi_timings 2048 1 59 183 187 224 1 13 3 22 0 0 0 60 0 38929335 1 > /dev/null
 			tvservice -e "DMT 6" > /dev/null;
 			tvservice -e "DMT 87" > /dev/null;
 			sleep 0.1
@@ -252,7 +252,7 @@ if [[ "$emul_lr" == "lr" ]]; then
 		[[ "$system" == "mame-libretro" ]] || 
 		[[ "$system" == "cavestory" ]] ; then 
 			# vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #CRTPi 1920x240p Timing Adjusted
-			vcgencmd hdmi_timings 1920 1 56 172 173 240 1 5 3 14 0 0 0 60 0 36496252 1 > /dev/null
+			vcgencmd hdmi_timings 1920 1 56 172 174 240 1 5 3 14 0 0 0 60 0 36496252 1 > /dev/null
 			tvservice -e "DMT 6" > /dev/null;
 			tvservice -e "DMT 87" > /dev/null;
 			sleep 0.1
