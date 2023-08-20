@@ -251,7 +251,8 @@ if [[ "$emul_lr" == "lr" ]]; then
 		[[ "$system" == "arcade" ]] || 
 		[[ "$system" == "mame-libretro" ]] || 
 		[[ "$system" == "cavestory" ]] ; then 
-			vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #CRTPi 1920x240p Timing Adjusted
+			# vcgencmd hdmi_timings 1920 1 137 247 295 240 1 3 7 12 0 0 0 60 0 40860000 1 > /dev/null #CRTPi 1920x240p Timing Adjusted
+			vcgencmd hdmi_timings 1920 1 56 172 173 240 1 5 3 14 0 0 0 60 0 36496252 1 > /dev/null
 			tvservice -e "DMT 6" > /dev/null;
 			tvservice -e "DMT 87" > /dev/null;
 			sleep 0.1
