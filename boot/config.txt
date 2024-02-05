@@ -58,10 +58,6 @@ boot_delay=1
 ## Uncomment if hdmi display is not detected and composite is being output
 hdmi_force_hotplug=1
 
-## Uncomment to force a specific HDMI mode (this will force VGA)
-#hdmi_group=1
-#hdmi_mode=1
-
 ## Uncomment to force a HDMI mode rather than DVI. This can make audio work in DMT (computer monitor) modes
 hdmi_drive=2
 #hdmi_ignore_cec_init=1
